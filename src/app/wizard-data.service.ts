@@ -25,7 +25,10 @@ export class WizardDataService {
                           message: 'Select appropriate product type',
                           type: 'select',
                           choices: ['Mobile', 'Tablet', 'Desktop'],
-                          validators: [Validators.required]
+                          validators: [Validators.required],
+                          guiOptions: {
+                              contentDensity: 'cozy'
+                          }
                       }
                   ]
               }
